@@ -3,617 +3,510 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BOOKMYMEDICARE</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Development version -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <!-- Production version -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script
-      src="https://kit.fontawesome.com/4eb0924021.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "BmBB5dCWteSms56nD",
-        });
-      })();
-    </script>
+    <title>First Response Nursing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <header>
-        <div class="header_part1">
-          <div class="header_part1_left">
-            <p>Welcome to BOOKMYMEDICARE</p>
+      <!-- nav bar -->
+      <nav>
+        <div class="nav-leftSide">
+          <a href="/index.html">
+            <img src="./images/Logo.jpg" alt="" />
+          </a>
+          <h1>First Response Nursing</h1>
+        </div>
+        <div class="nav-midSide">
+          <ul>
+            <a href="/index.html">
+              <li>Home</li>
+            </a>
+            <a href="#services">
+              <li>Services</li>
+            </a>
+            <a href="">
+              <li>About</li>
+            </a>
+            <a href="/pages/OurTeam.html">
+              <li>Our Team</li>
+            </a>
+            <a href="#contactBox">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div class="nav-rightSide">
+          <button><a href="https://wa.me/919576483847">Chat Us</a></button>
+          <button><a href="tel:9576483847">Call Us</a></button>
+        </div>
+        <div class="OpenCloseBtn">
+          <img src="./images/three-line.svg" class="openbtn" alt="openbtn" />
+          <img src="./images/cross.svg" class="closebtn hide" alt="closebtn" />
+        </div>
+      </nav>
+      <div class="mobile-view hide">
+        <div class="mobile-view-nav">
+          <div class="nav-top">
+            <ul>
+              <a href="/index.html">
+                <li>Home</li>
+              </a>
+              <a href="#services">
+                <li>Services</li>
+              </a>
+              <a href="">
+                <li>About</li>
+              </a>
+              <a href="/pages/OurTeam.html">
+                <li>Our Team</li>
+              </a>
+              <a href="#contactBox">
+                <li>Contact</li>
+              </a>
+            </ul>
           </div>
-          <div class="header_part1_right">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-smartphone"
-            >
-              <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
-              <path d="M12 18h.01" />
-            </svg>
-            <a href="tel:9576483847"><p>+91 9576483847</p></a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-phone"
-            >
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-              />
-            </svg>
-            <a href="tel:9576483847"><p>+91 9576483847</p></a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-mail"
-            >
-              <rect width="20" height="16" x="2" y="4" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            <a href="mailto:bookmymedicare@gmail.com"
-              >bookmymedicare@gmail.com</a
-            >
+          <div class="nav-bottom">
+            <button><a href="https://wa.me/919576483847">Chat Us</a></button>
+            <button><a href="tel:9576483847">Call Us</a></button>
           </div>
         </div>
-        <div class="header_part2">
-          <nav>
-            <div class="nav_left">
-              <a href="index.html"
-                ><img src="/Images/medicareLogo.png" alt="medicareLogo"
-              /></a>
+      </div>
+
+      <!-- hero section -->
+      <div class="hero-section">
+        <div class="hero-leftSide">
+          <div class="rating-section">
+            <div class="profile-images">
+              <img src="/images/testimonial-1.avif" alt="User 1" />
+              <img src="/images/testimonial-2.avif" alt="User 2" />
+              <img src="/images/testimonial-3.avif" alt="User 3" />
+              <img src="/images/testimonial-4.avif" alt="User 4" />
+              <img src="/images/testimonial-5.avif" alt="User 5" />
             </div>
-            <div class="nav_mid">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="/Pages/aboutUs/aboutUs.html">About Us</a></li>
-                <li><a href="/Pages/ourTeam/ourTeam.html">Our Team</a></li>
-                <li><a href="#ContactUs">Contact Us</a></li>
-              </ul>
+            <div>
+              <div class="stars">★★★★★</div>
+              <div class="text">
+                Join <span class="bold">100+</span> Patient
+              </div>
             </div>
-            <div class="nav_right">
-              <a href="tel:9576483847">Call Us Now</a>
-              <a href="https://wa.me/919576483847">Chat Us Now</a>
-            </div>
-          </nav>
+          </div>
+          <h1>First Response Nursing services</h1>
+          <p>EVERYTIME, ANYWHERE AT YOUR SERVICE!</p>
+          <div>
+            <button class="chatUs">
+              <a href="https://wa.me/919576483847">Chat Us</a>
+            </button>
+            <button><a href="tel:9576483847">Call Us</a></button>
+          </div>
         </div>
-      </header>
+        <div class="hero-rightSide">
+          <img src="./images/heroImg.jpg" alt="" />
+        </div>
+      </div>
 
-      <section class="main">
-        <div class="main_leftSide">
-          <span class="tagline">HOME HEALTHCARE SERVICES</span>
-          <h1 class="headline">BOOKMYMEDICARE</h1>
-          <span class="sub_tagline">EVERYTIME, ANYWHERE AT YOUR SERVICE!</span>
-          <p class="description">
-            Homecare <span>You Need And Deserve</span> With Your Loved Ones
-          </p>
-          <a href="tel:9576483847" class="call_to_action">Call Us Now</a>
-        </div>
-        <div class="main_rightSide">
-          <img src="/Images/banner1.png" alt="Home Healthcare Banner" />
-        </div>
-      </section>
-
-      <section class="whoWeAre">
-        <div class="whoWeAre_leftSide">
-          <img src="/Images//whoweare.png" alt="" />
-        </div>
-        <div class="whoWeAre_rightSide">
-          <h2>WHO WE ARE</h2>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-activity"
-            >
-              <path
-                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
-              />
-            </svg>
-            <p>
-              Book My Medicare is your single point of contact for Home
-              Medi-Care needs.
-            </p>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-activity"
-            >
-              <path
-                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
-              />
-            </svg>
-            <p>
-              We're dedicated to delivering top-notch service with our
-              experienced team at an affordable price.
-            </p>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-activity"
-            >
-              <path
-                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
-              />
-            </svg>
-            <p>
-              We've implemented a system to document patient activities, aiding
-              our clinical team in making informed decisions for better care.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="whoWeWork">
-        <div class="whoWeWork_leftSide">
-          <h2>WHO WE ARE</h2>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-activity"
-            >
-              <path
-                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
-              />
-            </svg>
-            <p>
-              Book My Medicare is your single point of contact for Home
-              Medi-Care needs.
-            </p>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-activity"
-            >
-              <path
-                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
-              />
-            </svg>
-            <p>
-              We're dedicated to delivering top-notch service with our
-              experienced team at an affordable price.
-            </p>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-activity"
-            >
-              <path
-                d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
-              />
-            </svg>
-            <p>
-              We've implemented a system to document patient activities, aiding
-              our clinical team in making informed decisions for better care.
-            </p>
-          </div>
-        </div>
-        <div class="whoWeWork_rightSide">
-          <img src="/Images//whoweare.png" alt="" />
-        </div>
-      </section>
-
-      <section class="choose_us">
-        <h2>WHY CHOOSE US <span>FOR YOUR HEALTH</span></h2>
-        <div class="card_container">
-          <div class="card">
-            <img src="/Images//whychooseus1.png" alt="Doctor" />
+      <!-- features section -->
+      <section class="features">
+        <h2 class="features-title">WHY CHOOSE US<br />FOR YOUR HEALTH</h2>
+        <div class="features-container">
+          <div class="feature-box">
+            <img src="./images/whychooseus1.png" alt="Medical Team" />
             <h3>Skilled & Experienced Medical Team</h3>
             <p>
               We have a dedicated and experienced medical team, ensuring proper
               and efficient patient care.
             </p>
           </div>
-          <div class="card">
-            <img src="/Images/whychooseus2.png" alt="Doctor" />
+
+          <div class="feature-box">
+            <img src="./images/whychooseus2.png" alt="Patient Protocol" />
             <h3>Robust Patient Protocol</h3>
             <p>
-              A through patient evaluation and defining clinical pathway makes
-              our clinical journey very objective and patient centric.
+              A thorough patient evaluation and defining clinical pathway makes
+              our clinical journey very objective and patient-centric.
             </p>
           </div>
-          <div class="card">
-            <img src="/Images/whychooseus3.png" alt="Doctor" />
+
+          <div class="feature-box">
+            <img src="./images/whychooseus3.png" alt="Availability" />
             <h3>365*24/7 Availability</h3>
             <p>
-              Our Dedicated team is always available for continuous patient care
+              Our dedicated team is always available for continuous patient care
               and support.
             </p>
           </div>
-          <div class="card">
-            <img src="/Images/equipment.png" alt="Doctor" />
-            <h3>Latest & High end Equipment</h3>
+
+          <div class="feature-box">
+            <img src="./images/whychooseus4.png" alt="Equipment" />
+            <h3>Latest & High-end Equipment</h3>
             <p>
-              We serve our patients with latest and high end version equipments
-              for better outcomes.
+              We serve our patients with the latest and high-end equipment for
+              better outcomes.
             </p>
           </div>
-          <div class="card">
-            <img src="/Images/whychooseus5.png" alt="Doctor" />
+
+          <div class="feature-box">
+            <img src="./images/whychooseus5.png" alt="Supply Chain" />
             <h3>Strong Supply Chain</h3>
-            <p>We have a strong supply team for timely equipment delivery.</p>
+            <p>
+              We have a strong supply team for timely equipment delivery and
+              international services.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <img src="./images/whychooseus6.png" alt="International Services" />
+            <h3>International Services</h3>
+            <p>
+              We provide world-class healthcare services globally, ensuring
+              accessibility and quality treatment for patients worldwide.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="Services" id="Services">
-        <h2>OUR SERVICES</h2>
-        <h4>AT YOUR HOME</h4>
-        <div class="Services_card_container">
-          <div class="Services_card">
-            <img src="/Images/full_basket.svg" alt="Doctor" />
-            <h3>Medical Equipment on Rental/purchase</h3>
-            <a href="/Pages/Equipment/Equipment.html"
-              >know more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-arrow-right"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" /></svg
-            ></a>
+      <!-- OUR SERVICES -->
+      <section id="services" class="our-services">
+        <p>AT YOUR HOME</p>
+        <h3>OUR SERVICES</h3>
+        <div class="servicesCards">
+          <div class="services-card">
+            <h4>PHYSIOTHERAPIST</h4>
+            <span>Personalized therapy to restore movement and function.</span>
+            <a href="/pages/Physiotherapist.html">Learn more</a>
           </div>
-          <div class="Services_card">
-            <img src="/Images/hospital_room.svg" alt="Doctor" />
-            <h3>ICU SETUP</h3>
-            <a href="/Pages/icuSetup/icuSetup.html"
-              >know more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-arrow-right"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" /></svg
-            ></a>
+          <div class="services-card">
+            <h4>CUPPING THERAPY</h4>
+            <span>Ancient therapy to relieve pain and inflammation.</span>
+            <a href="/pages/CuppingTherapy.html">Learn more</a>
           </div>
-          <div class="Services_card">
-            <img src="/Images/surgery.svg" alt="Doctor" />
-            <h3>Post surgery care at home</h3>
-            <a href="/Pages/PostSurgery/PostSurgery.html"
-              >know more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-arrow-right"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" /></svg
-            ></a>
+          <div class="services-card">
+            <h4>QUALIFIED RN NURSES</h4>
+            <span>Experienced registered nurses for home healthcare.</span>
+            <a href="/pages/Nurses.html">Learn more</a>
           </div>
-          <div class="Services_card">
-            <img src="/Images/trust.svg" alt="Doctor" />
-            <h3>Palliative geriatric care</h3>
-            <a href="/Pages/palliative/palliative.html"
-              >know more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-arrow-right"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" /></svg
-            ></a>
-          </div>
-          <div class="Services_card">
-            <img src="/Images/ambulance.svg" alt="Doctor" />
-            <h3>Ambulance Services</h3>
-            <a href="/Pages/ambulance/ambulance.html"
-              >know more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-arrow-right"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" /></svg
-            ></a>
-          </div>
-          <div class="Services_card">
-            <img src="/Images/microscope.svg" alt="Doctor" />
-            <h3>Lab services at home</h3>
-            <a href="/Pages/labService/labService.html"
-              >know more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-arrow-right"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" /></svg
-            ></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="ContactUs" id="ContactUs">
-        <div class="content">
-          <h1>From Our <span>Family</span> To Your</h1>
-          <p>We Understand Your Need And We Deliver Our Best</p>
-          <p>
-            We Believe In Taking Care Of You And Your Loved Ones As We Do Our
-            Own
-          </p>
-        </div>
-        <div class="callBack_form">
-          <h2>Request a Callback</h2>
-          <form class="contactUs_form">
-            <div class="contact_Field">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Name" required />
-            </div>
-            <div class="contact_Field">
-              <label for="phone">phone</label>
-              <input
-                type="text"
-                id="phone"
-                placeholder="phone"
-                required
-                maxlength="10"
-              />
-            </div>
-            <div class="contact_Field">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" placeholder="E-mail" required />
-            </div>
-            <div class="contact_Field">
-              <label for="city">city</label>
-              <input type="text" id="city" placeholder="City" required />
-            </div>
-            <div class="contact_Field">
-              <label for="message">Message</label>
-              <textarea
-                type="text"
-                id="message"
-                placeholder="message"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" id="SentFormBtn"  class="submit-btn">Request a Callback</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="review-section">
-        <h1>What Our Customers Say</h1>
-        <div class="slider-container">
-          <button class="prev-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-arrow-left"
+          <div class="services-card">
+            <h4>WELL EXPERIENCED CARE TAKERS</h4>
+            <span
+              >Professional caregivers for elderly and disabled
+              individuals.</span
             >
-              <path d="m12 19-7-7 7-7" />
-              <path d="M19 12H5" />
-            </svg>
-          </button>
-          <div class="slider">
-            <div class="slide">
-              <div class="review">
-                <img src="/Images/female.png" alt="female" />
-                <h3>Preeti Chaudhari</h3>
-                <p>
-                  Great services for both of my parents at different times.
-                  Recently supported my mother for her post-total knee
-                  replacement.
-                </p>
-                <a href="#">Read more</a>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="review">
-                <img src="/Images/male.png" alt="Avatar" />
-                <h3>Raj Kumar</h3>
-                <p>
-                  Medicare has been providing great caregivers every time we ask
-                  for. The caretaker Manisha Kamble has been of great support.
-                </p>
-                <a href="#">Read more</a>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="review">
-                <img src="/Images/male.png" alt="Avatar" />
-                <h3>V Ramaswamy</h3>
-                <p>
-                  The Care manager Ms. Pooja Yadav has been prompt in answering
-                  all my queries, doubts, and very helpful and courteous.
-                </p>
-                <a href="#">Read more</a>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="review">
-                <img src="/Images/male.png" alt="Avatar" />
-                <h3>Rohit Verma</h3>
-                <p>
-                  Gudia is a nice caregiver. We give full marks for her work.
-                </p>
-                <a href="#">Read more</a>
-              </div>
-            </div>
+            <a href="/pages/CareTakers.html">Learn more</a>
           </div>
-          <button class="next-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-arrow-right"
+          <div class="services-card">
+            <h4>ACCUPUNCTURE THERAPY</h4>
+            <span
+              >Natural healing using traditional acupuncture techniques.</span
             >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </button>
+            <a href="/pages/Acupuncture.html">Learn more</a>
+          </div>
+          <div class="services-card">
+            <h4>PATHOLOGY</h4>
+            <span>Comprehensive lab testing services at your doorstep.</span>
+            <a href="/pages/Pathology.html">Learn more</a>
+          </div>
+          <div class="services-card">
+            <h4>ICU SET UP</h4>
+            <span
+              >Advanced ICU equipment installation for critical care at
+              home.</span
+            >
+            <a href="/pages/ICU.html">Learn more</a>
+          </div>
+          <div class="services-card">
+            <h4>PHARMACY</h4>
+            <span>Doorstep delivery of medicines and healthcare products.</span>
+            <a href="/pages/Pharmacy.html">Learn more</a>
+          </div>
+          <div class="services-card">
+            <h4>AMBULANCE SERVICES</h4>
+            <span>24/7 emergency medical transport services.</span>
+            <a href="/pages/Ambulance.html">Learn more</a>
+          </div>
+          <div class="services-card">
+            <h4>ECG SERVICE</h4>
+            <span
+              >Get at-home ECG tests for accurate heart monitoring, detecting
+              irregular rhythms and early heart disease signs.</span
+            >
+            <a href="/pages/ECGService.html">Learn more</a>
+          </div>
+          <div class="services-card">
+            <h4>DOCTOR SURVIVE</h4>
+            <span
+              >Our 24/7 on-call doctors provide expert medical guidance and
+              emergency care whenever you need it.</span
+            >
+            <a href="/pages/Doctor.html">Learn more</a>
+          </div>
         </div>
       </section>
 
-      <footer>
-        <div class="socialMedia">
-          <a href=""><i class="fa-brands fa-instagram"></i> </a>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+      <!-- Specialized Care -->
+      <section class="specialized-care">
+        <h2>Specialized Care</h2>
+        <div class="care-container">
+          <div class="care-box">
+            <img src="/images/Bed-Ridden.png" alt="Bed-ridden patient care" />
+            <h3>Bed-Ridden Patient Care</h3>
+            <p>
+              Providing expert care and support for immobile patients at home.
+            </p>
+          </div>
+          <div class="care-box">
+            <img src="/images/OldAgePatient.png" alt="Old-age patient care" />
+            <h3>Old Age Patient Care</h3>
+            <p>
+              Compassionate elderly care ensuring comfort and medical
+              supervision.
+            </p>
+          </div>
+          <div class="care-box">
+            <img
+              src="/images/Post-Operative.png"
+              alt="Post-operative patient care"
+            />
+            <h3>Post-Operative Patient Care</h3>
+            <p>
+              Specialized recovery assistance after surgeries and medical
+              procedures.
+            </p>
+          </div>
+          <div class="care-box">
+            <img src="/images/respiratoryCare.png" alt="Respiratory care" />
+            <h3>Respiratory Care</h3>
+            <p>
+              Dedicated respiratory support for patients with breathing
+              difficulties.
+            </p>
+          </div>
         </div>
-        <div class="shortLinks">
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/Pages/aboutUs/aboutUs.html">About Us</a></li>
-            <li><a href="/index.html#Services">OurServices</a></li>
-            <li><a href="/index.html#ContactUs">Contact Us</a></li>
-            <li>
-              <a href="/Pages/PrivacyPolicy/PrivacyPolicy.html"
-                >Privacy Policy</a
-              >
-            </li>
-            <li>
-              <a href="/Pages/termsConditions/termsConditions.html"
-                >Terms & Conditions</a
-              >
-            </li>
-          </ul>
+      </section>
+
+      <!-- Medical Facilities -->
+      <section id="medical-facilities">
+        <h2>Medical Facilities</h2>
+        <div class="facility-cards">
+          <div class="facility-card">
+            <img src="/images/ICUSetUp.png" alt="ICU Setup at Home" />
+            <h3>ICU Setup at Home</h3>
+            <p>
+              Setup and manage ICU facilities at home with professional
+              equipment and support.
+            </p>
+          </div>
+          <div class="facility-card">
+            <img
+              src="/images/equipment-icon.png"
+              alt="Medical Equipment for Purchase or Rent"
+            />
+            <h3>Medical Equipment for Purchase or Rent</h3>
+            <p>Rent or purchase medical equipment for home care needs.</p>
+          </div>
         </div>
-        <hr />
-        <p>Copyright © 2024 BOOKMYMEDICARE. All Rights Reserved</p>
+      </section>
+
+      <!-- services available -->
+
+      <section class="services-available">
+        <h2>Our services at available</h2>
+        <div>
+          <img src="/images/mumbai.png" alt="" />
+          <p>Mumbai</p>
+        </div>
+        <div>
+          <img src="/images/hyderabad-charminar.png" alt="" />
+          <p>Hyderabad</p>
+        </div>
+        <div>
+          <img src="/images/pune.png" alt="" />
+          <p>Pune</p>
+        </div>
+        <div>
+          <img src="/images/bangalore.png" alt="" />
+          <p>Bangalore</p>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <h3 class="section-subtitle">TESTIMONIALS</h3>
+        <h2 class="section-title">What our users say</h2>
+
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <img src="/images/testimonial-1.avif" alt="John" />
+            <h4>John</h4>
+            <p class="username">@johndoe</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              nec ultrices orci.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="/images/testimonial-2.avif" alt="Max" />
+            <h4>Max</h4>
+            <p class="username">@maxcook</p>
+            <p>
+              Mauris tincidunt porttitor risus, et posuere erat malesuada eu.
+              Praesent volutpat.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="/images/testimonial-3.avif" alt="Bob" />
+            <h4>Bob</h4>
+            <p class="username">@thisisbob</p>
+            <p>
+              Curabitur at quam eget eros semper euismod vitae at neque. Ut
+              ultrices tortor.
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <img src="/images/testimonial-2.avif" alt="Max" />
+            <h4>Max</h4>
+            <p class="username">@maxcook</p>
+            <p>
+              Mauris tincidunt porttitor risus, et posuere erat malesuada eu.
+              Praesent volutpat.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="/images/testimonial-3.avif" alt="Bob" />
+            <h4>Bob</h4>
+            <p class="username">@thisisbob</p>
+            <p>
+              Curabitur at quam eget eros semper euismod vitae at neque. Ut
+              ultrices tortor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Us -->
+      <h2 class="contact-us-title">Contact Us</h2>
+      <section id="contactBox" class="contact-us">
+        <div class="content-leftSide">
+          <h2>Let's Chat</h2>
+          <h4>First Response Nursing services</h4>
+          <div class="contact-boxs">
+            <div class="contact-box">
+              <img src="./images/maps-and-flags.png" alt="" />
+              <div class="contact-box-inside">
+                <p>Email id</p>
+                <p>@client Email id</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <img src="./images/phone-call.png" alt="" />
+              <div class="contact-box-inside">
+                <p>Phone No</p>
+                <p>client phone no</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <img src="./images/whatsapp.png" alt="" />
+              <div class="contact-box-inside">
+                <p>Whatsapp No</p>
+                <p>client whatsapp no</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div>
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Full Name"
+            />
+          </div>
+          <div>
+            <label for="Email-id">Email-id</label>
+            <input
+              type="text"
+              id="Email-id"
+              name="Email-id"
+              placeholder="Email-id"
+            />
+          </div>
+          <div>
+            <label for="Phone-No">Phone No</label>
+            <input
+              type="text"
+              id="Phone-No"
+              name="Phone-No"
+              placeholder="Phone No"
+            />
+          </div>
+          <div>
+            <label for="City">City</label>
+            <input type="text" id="City" name="City" placeholder="City" />
+          </div>
+          <div>
+            <label for="Requirements">Requirements</label>
+            <textarea name="Requirements" id="Requirements" rows="5"></textarea>
+          </div>
+          <button>Submit</button>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+              We provide the best solutions for your business, helping you to
+              grow and succeed with our top-notch services.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="/pages/OurTeam.html">Our Team</a></li>
+              <li><a href="#contactBox">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>Email: support@example.com</li>
+              <li>Phone: +1 234 567 890</li>
+              <li>Address: 123 Business Street, City</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><img src="/images/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="/images/twitter.png" alt="Twitter" /></a>
+              <a href="#"
+                ><img src="/images/instagram.png" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
       </footer>
     </div>
-
-    <script src="srcipt.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
