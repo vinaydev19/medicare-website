@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ICU Set Up</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,62 +13,49 @@
     />
   </head>
   <style>
-    .content-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 20px;
-      max-width: 900px;
-      margin: 50px auto;
-      min-height: 70vh;
+    .about-us {
       background: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 60px 20px;
+      text-align: center;
     }
 
-    .content-section div {
-      flex: 1;
-      min-width: 300px;
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
-    .content-section img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 10px;
-    }
-    .content-section h1 {
-      font-size: 24px;
-      color: #333;
-      margin-bottom: 10px;
+    .about-us h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-weight: bold;
     }
 
-    .content-section p {
-      font-size: 16px;
-      color: #666;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .content-section button {
-      padding: 15px;
+    .about-us p {
       font-size: 1.1rem;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      border-radius: 10px;
-      background-color: #7358f9;
-      color: white;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
     }
 
-    .content-section button a {
-      text-decoration: none;
-      color: white;
+    .about-us strong {
+      color: #3498db;
+      font-weight: bold;
     }
 
-    .content-section button:hover {
-      background-color: #3b82f6;
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-container {
+        padding: 0 20px;
+      }
+
+      .about-us h2 {
+        font-size: 1.8rem;
+      }
+
+      .about-us p {
+        font-size: 1rem;
+      }
     }
   </style>
   <body>
@@ -138,20 +125,46 @@
       </div>
 
       <!-- section content -->
-      <section class="content-section">
-        <div>
-          <img src="/images/ICUSetUp.png" alt="" />
-        </div>
-        <div>
-          <h1>ICU Set Up</h1>
+      <section class="about-us">
+        <div class="about-container">
+          <h2>About Us</h2>
           <p>
-            We provide advanced ICU equipment installation for patients
-            requiring critical care at home. Our setup includes ventilators,
-            oxygen support, cardiac monitors, and more, ensuring hospital-grade
-            care in a comfortable home setting.
+            At <strong>First Response Nursing Services</strong>, we are
+            dedicated to providing top-quality healthcare services right at your
+            doorstep. Our mission is to ensure
+            <strong
+              >every patient receives timely, expert, and compassionate
+              care</strong
+            >, whether at home or in an emergency.
           </p>
-          <button><a href="https://wa.me/919576483847">Chat Us</a></button>
-          <button><a href="tel:9576483847">Call Us</a></button>
+          <p>
+            With a <strong>skilled and experienced medical team</strong>, we
+            follow <strong>robust patient protocols</strong> to deliver
+            <strong>personalized and efficient care</strong>. Our services are
+            available <strong>24/7, 365 days a year</strong>, ensuring
+            <strong>continuous patient support</strong> whenever needed.
+          </p>
+          <p>
+            We offer a <strong>wide range of healthcare services</strong>,
+            including
+            <strong
+              >qualified nurses, physiotherapy, post-operative care, respiratory
+              care, pathology services, and ICU setup at home</strong
+            >. Our <strong>strong supply chain</strong> and
+            <strong>latest high-end equipment</strong> ensure that patients
+            receive the best possible care without compromise.
+          </p>
+          <p>
+            Beyond local services, we also provide
+            <strong>world-class international healthcare solutions</strong>,
+            making quality treatment accessible worldwide.
+          </p>
+          <p>
+            At <strong>First Response Nursing Services</strong>, your health is
+            our top priority. We are always at your service—<strong
+              >Every Time, Anywhere!</strong
+            >
+          </p>
         </div>
       </section>
 
