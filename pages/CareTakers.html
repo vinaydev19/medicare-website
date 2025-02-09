@@ -70,6 +70,57 @@
     .content-section button:hover {
       background-color: #3b82f6;
     }
+    /* Specialized Care */
+
+    .specialized-care {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: var(--main-bg-color);
+    }
+
+    .specialized-care h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .care-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .care-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .care-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .care-box img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .care-box h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .care-box p {
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
   <body>
     <div class="container">
@@ -152,6 +203,47 @@
           </p>
           <button><a href="https://wa.me/919576483847">Chat Us</a></button>
           <button><a href="tel:9576483847">Call Us</a></button>
+        </div>
+      </section>
+
+      <!-- Specialized Care -->
+      <section class="specialized-care">
+        <h2>Specialized Care</h2>
+        <div class="care-container">
+          <div class="care-box">
+            <img src="/images/Bed-Ridden.png" alt="Bed-ridden patient care" />
+            <h3>Bed-Ridden Patient Care</h3>
+            <p>
+              Providing expert care and support for immobile patients at home.
+            </p>
+          </div>
+          <div class="care-box">
+            <img src="/images/OldAgePatient.png" alt="Old-age patient care" />
+            <h3>Old Age Patient Care</h3>
+            <p>
+              Compassionate elderly care ensuring comfort and medical
+              supervision.
+            </p>
+          </div>
+          <div class="care-box">
+            <img
+              src="/images/Post-Operative.png"
+              alt="Post-operative patient care"
+            />
+            <h3>Post-Operative Patient Care</h3>
+            <p>
+              Specialized recovery assistance after surgeries and medical
+              procedures.
+            </p>
+          </div>
+          <div class="care-box">
+            <img src="/images/respiratoryCare.png" alt="Respiratory care" />
+            <h3>Respiratory Care</h3>
+            <p>
+              Dedicated respiratory support for patients with breathing
+              difficulties.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Response Nursing - 24/7 Home Healthcare Services</title>
-    <link
-      rel="shortcut icon"
-      href="/images/favicon.ico"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/png" />
     <meta
       name="description"
       content="First Response Nursing offers expert home healthcare services, including physiotherapy, ICU setup, ambulance services, and specialized patient care. Available 24/7 in Mumbai, Hyderabad, Pune, and Bangalore."
@@ -26,6 +22,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "BmBB5dCWteSms56nD",
+        });
+      })();
+    </script>
   </head>
   <body>
     <div class="container">
@@ -57,8 +64,8 @@
           </ul>
         </div>
         <div class="nav-rightSide">
-          <button><a href="https://wa.me/919576483847">Chat Us</a></button>
-          <button><a href="tel:9576483847">Call Us</a></button>
+          <button><a href="https://wa.me/7666806290">Chat Us</a></button>
+          <button><a href="tel:7666806290">Call Us</a></button>
         </div>
         <div class="OpenCloseBtn">
           <img src="./images/three-line.svg" class="openbtn" alt="openbtn" />
@@ -87,8 +94,8 @@
             </ul>
           </div>
           <div class="nav-bottom">
-            <button><a href="https://wa.me/919576483847">Chat Us</a></button>
-            <button><a href="tel:9576483847">Call Us</a></button>
+            <button><a href="https://wa.me/7666806290">Chat Us</a></button>
+            <button><a href="tel:7666806290">Call Us</a></button>
           </div>
         </div>
       </div>
@@ -115,9 +122,9 @@
           <p>EVERYTIME, ANYWHERE AT YOUR SERVICE!</p>
           <div>
             <button class="chatUs">
-              <a href="https://wa.me/919576483847">Chat Us</a>
+              <a href="https://wa.me/7666806290">Chat Us</a>
             </button>
-            <button><a href="tel:9576483847">Call Us</a></button>
+            <button><a href="tel:7666806290">Call Us</a></button>
           </div>
         </div>
         <div class="hero-rightSide">
@@ -262,46 +269,7 @@
         </div>
       </section>
 
-      <!-- Specialized Care -->
-      <section class="specialized-care">
-        <h2>Specialized Care</h2>
-        <div class="care-container">
-          <div class="care-box">
-            <img src="/images/Bed-Ridden.png" alt="Bed-ridden patient care" />
-            <h3>Bed-Ridden Patient Care</h3>
-            <p>
-              Providing expert care and support for immobile patients at home.
-            </p>
-          </div>
-          <div class="care-box">
-            <img src="/images/OldAgePatient.png" alt="Old-age patient care" />
-            <h3>Old Age Patient Care</h3>
-            <p>
-              Compassionate elderly care ensuring comfort and medical
-              supervision.
-            </p>
-          </div>
-          <div class="care-box">
-            <img
-              src="/images/Post-Operative.png"
-              alt="Post-operative patient care"
-            />
-            <h3>Post-Operative Patient Care</h3>
-            <p>
-              Specialized recovery assistance after surgeries and medical
-              procedures.
-            </p>
-          </div>
-          <div class="care-box">
-            <img src="/images/respiratoryCare.png" alt="Respiratory care" />
-            <h3>Respiratory Care</h3>
-            <p>
-              Dedicated respiratory support for patients with breathing
-              difficulties.
-            </p>
-          </div>
-        </div>
-      </section>
+      
 
       <!-- Medical Facilities -->
       <section id="medical-facilities">
@@ -416,21 +384,21 @@
               <img src="./images/maps-and-flags.png" alt="" />
               <div class="contact-box-inside">
                 <p>Email id</p>
-                <p>@client Email id</p>
+                <p>firstresponsenursingservice007@gmail.com</p>
               </div>
             </div>
             <div class="contact-box">
               <img src="./images/phone-call.png" alt="" />
               <div class="contact-box-inside">
                 <p>Phone No</p>
-                <p>client phone no</p>
+                <p>7666806290</p>
               </div>
             </div>
             <div class="contact-box">
               <img src="./images/whatsapp.png" alt="" />
               <div class="contact-box-inside">
                 <p>Whatsapp No</p>
-                <p>client whatsapp no</p>
+                <p>9028434966</p>
               </div>
             </div>
           </div>
@@ -471,7 +439,7 @@
             <label for="Requirements">Requirements</label>
             <textarea name="Requirements" id="Requirements" rows="5"></textarea>
           </div>
-          <button>Submit</button>
+          <button onclick="sendMail()">Submit</button>
         </div>
       </section>
 
@@ -494,6 +462,11 @@
               <li><a href="/pages/OurTeam.html">Our Team</a></li>
               <li><a href="/pages/AboutUs.html">About Us</a></li>
               <li><a href="#contactBox">Contact</a></li>
+              <li>
+                <a href="/pages/TermsAndConditions.html"
+                  >Terms and Conditions</a
+                >
+              </li>
             </ul>
           </div>
 
