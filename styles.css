@@ -165,7 +165,7 @@ nav {
   }
 }
 
-.nav-bottom button a{
+.nav-bottom button a {
   text-decoration: none;
   color: white;
 }
@@ -287,7 +287,7 @@ nav {
 
 .hero-rightSide {
   width: 50%;
-  height: 80vh;
+  /* height: 80vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,7 +387,10 @@ nav {
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--btn-bg-color);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+.features-tagline {
+  padding-bottom: 10px;
 }
 
 .features-container {
@@ -395,6 +398,7 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   justify-items: center;
+  margin-top: 30px;
 }
 
 .feature-box {
@@ -483,14 +487,29 @@ nav {
   gap: 20px;
   /* background-color: red; */
 }
-.our-services h3 {
-  font-size: 2rem;
+
+.services-title {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #3b82f6;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0073e6;
 }
 
-.our-services p {
-  color: #7358f9;
+.services-title span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6600;
 }
-
+.services-tagline {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
 .servicesCards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -559,6 +578,22 @@ nav {
   }
 }
 
+@media (max-width: 425px) {
+  .services-title span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+    padding: 10px;
+  }
+  .services-tagline {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
 /* Contact Us */
 
 .contact-us {
@@ -566,15 +601,28 @@ nav {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 60px 10%;
-  gap: 20px;
+  padding: 20px 0px 20px 0px;
+  /* gap: 10px; */
   background-color: var(--main-bg-color);
   color: #333;
 }
 
 .contact-us-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0073e6;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.contact-us-tagline {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
 .content-leftSide {
@@ -596,32 +644,24 @@ nav {
 .contact-boxs {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 100%;
-  /* background-color: red; */
-  padding: 20px;
 }
 
 .contact-box {
-  margin: 20px 0px;
+  margin: 10px 0px;
   background-color: var(--main-bg-color);
-  padding: 20px;
   border-radius: 20px;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  padding: 15px; /* Add padding for better spacing */
+  word-wrap: break-word; /* Ensure text breaks properly */
+  overflow-wrap: break-word; /* Alternative for better browser support */
+  max-width: 100%; /* Prevents content from extending outside */
+  white-space: normal; /* Allows text to wrap */
 }
 
-.contact-box img {
-  width: 50px;
-  padding: 5px;
-}
-
-.contact-box-inside p:nth-child(1) {
+.contact-box p:nth-child(1) {
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .contact-form {
@@ -812,28 +852,28 @@ nav {
   background: var(--main-bg-color);
 }
 
-.services-available h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.services-available div {
-  display: inline-block;
-  text-align: center;
-  margin: 15px;
-  padding: 15px;
+.services-item {
   background: white;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
-.services-available div:hover {
+.services-item:hover {
   transform: scale(1.05);
 }
 
-.services-available img {
+.services-item img {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -841,10 +881,20 @@ nav {
   margin-bottom: 10px;
 }
 
-.services-available p {
+.services-item p {
   font-size: 18px;
   font-weight: 600;
   color: #555;
+}
+
+@media (max-width: 320px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
 }
 
 /* Testimonials */
@@ -888,6 +938,10 @@ nav {
   text-align: left;
   max-width: 300px;
   transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .testimonial-card:hover {
@@ -932,13 +986,7 @@ nav {
   }
 }
 
-
-
 /* Medical Facilities */
-
-#medical-facilities {
-  margin-top: 30px;
-}
 
 #medical-facilities h2 {
   text-align: center;
@@ -948,8 +996,8 @@ nav {
 
 .facility-cards {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: center;
+  gap: 50px;
 }
 
 .facility-card {
@@ -958,12 +1006,13 @@ nav {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 500px;
+  margin: 10px;
 }
 
 .facility-card img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px;
 }
 
@@ -989,14 +1038,13 @@ nav {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .footer-column {
-  flex: 1 1 250px;
   text-align: left;
 }
 
