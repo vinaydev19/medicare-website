@@ -71,7 +71,7 @@
           </ul>
         </div>
         <div class="nav-rightSide">
-          <button><a href="https://wa.me/9028434966">Chat Us</a></button>
+          <button><a href="https://wa.me/8446099609">Chat Us</a></button>
           <button><a href="tel:9028434966">Call Us</a></button>
         </div>
         <div class="OpenCloseBtn">
@@ -101,7 +101,7 @@
             </ul>
           </div>
           <div class="nav-bottom">
-            <button><a href="https://wa.me/9028434966">Chat Us</a></button>
+            <button><a href="https://wa.me/8446099609">Chat Us</a></button>
             <button><a href="tel:9028434966">Call Us</a></button>
           </div>
         </div>
@@ -129,7 +129,7 @@
           <p>Compassionate Care, Anytime, Anywhere! 💙</p>
           <div>
             <button class="chatUs">
-              <a href="https://wa.me/9028434966">Chat Us</a>
+              <a href="https://wa.me/8446099609">Chat Us</a>
             </button>
             <button><a href="tel:9028434966">Call Us</a></button>
           </div>
@@ -347,19 +347,19 @@
             >
             <a href="/pages/CareTakers.html">Learn more</a>
           </div>
-          <div class="services-card">
+          <div class="services-card hidden-services">
             <h4>ACCUPUNCTURE THERAPY</h4>
             <span
               >Natural healing using traditional acupuncture techniques.</span
             >
             <a href="/pages/Acupuncture.html">Learn more</a>
           </div>
-          <div class="services-card">
+          <div class="services-card hidden-services">
             <h4>PATHOLOGY</h4>
             <span>Comprehensive lab testing services at your doorstep.</span>
             <a href="/pages/Pathology.html">Learn more</a>
           </div>
-          <div class="services-card">
+          <div class="services-card hidden-services">
             <h4>ICU SET UP</h4>
             <span
               >Advanced ICU equipment installation for critical care at
@@ -367,17 +367,17 @@
             >
             <a href="/pages/ICU.html">Learn more</a>
           </div>
-          <div class="services-card">
+          <div class="services-card hidden-services">
             <h4>PHARMACY</h4>
             <span>Doorstep delivery of medicines and healthcare products.</span>
             <a href="/pages/Pharmacy.html">Learn more</a>
           </div>
-          <div class="services-card">
+          <div class="services-card hidden-services">
             <h4>AMBULANCE SERVICES</h4>
             <span>24/7 emergency medical transport services.</span>
             <a href="/pages/Ambulance.html">Learn more</a>
           </div>
-          <div class="services-card">
+          <div class="services-card hidden-services">
             <h4>ECG SERVICE</h4>
             <span
               >Get at-home ECG tests for accurate heart monitoring, detecting
@@ -385,7 +385,7 @@
             >
             <a href="/pages/ECGService.html">Learn more</a>
           </div>
-          <div class="services-card">
+          <div class="services-card hidden-services">
             <h4>DOCTOR SERVICE</h4>
             <span
               >Our 24/7 on-call doctors provide expert medical guidance and
@@ -395,6 +395,9 @@
           </div>
         </div>
       </section>
+      <div class="view-more">
+        <button id="viewMoreBtn">View More</button>
+      </div>
 
       <!-- Medical Facilities -->
       <section id="medical-facilities">
@@ -444,6 +447,7 @@
       </section>
 
       <!-- Testimonials -->
+      <h4 class="testimonial-title">Real Stories, Real Care</h4>
       <section class="testimonials">
         <div class="wrapper">
           <i id="left" class="fa-solid fa-angle-left"></i>
@@ -542,13 +546,14 @@
             </p>
           </div>
         </div>
-        <div class="contact-form">
+        <form class="contact-form">
           <div>
             <label for="fullName">Full Name</label>
             <input
               type="text"
               id="fullName"
               name="fullName"
+              required
               placeholder="Full Name"
             />
           </div>
@@ -558,6 +563,7 @@
               type="text"
               id="Email-id"
               name="Email-id"
+              required
               placeholder="Email-id"
             />
           </div>
@@ -567,19 +573,31 @@
               type="text"
               id="Phone-No"
               name="Phone-No"
+              required
               placeholder="Phone No"
             />
           </div>
           <div>
             <label for="City">City</label>
-            <input type="text" id="City" name="City" placeholder="City" />
+            <input
+              type="text"
+              id="City"
+              name="City"
+              required
+              placeholder="City"
+            />
           </div>
           <div>
             <label for="Requirements">Requirements</label>
-            <textarea name="Requirements" id="Requirements" rows="5"></textarea>
+            <textarea
+              name="Requirements"
+              id="Requirements"
+              required
+              rows="5"
+            ></textarea>
           </div>
-          <button onclick="sendMail()">Submit</button>
-        </div>
+          <button>Submit</button>
+        </form>
       </section>
 
       <!-- footer -->
@@ -606,7 +624,7 @@
             <ul>
               <li>Email: firstresponsenursingservice007@gmail.com</li>
               <li>Phone: +91 9028434966</li>
-              <li>Whatsapp: +91 9028434966</li>
+              <li>Whatsapp: +91 8446099609</li>
               <li>
                 Address: Kidwai Nagar Nagaon Road Near Chirag Hotel Bhiwandi
               </li>

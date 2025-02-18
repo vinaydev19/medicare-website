@@ -14,40 +14,33 @@ openbtn.addEventListener("click", () => {
   closebtn.classList.remove("hide");
 });
 
-// let currentIndex = 0;
-// const cardWidth = 500;
-// const visibleCards = 3;
-// const totalCards = document.querySelectorAll(".testimonial-card").length;
+document.getElementById("viewMoreBtn").addEventListener("click", function () {
+  let hiddenServices = document.querySelectorAll(".hidden-services");
 
-// function updateTestimonials() {
-//   const offset = -currentIndex * cardWidth;
-//   container.style.transform = `translateX(${offset}px)`;
-// }
+  hiddenServices.forEach((service) => {
+    service.style.display = "flex"; // Show the hidden services
+  });
 
-// prevBtn.addEventListener("click", () => {
-//   if (currentIndex > 0) {
-//     currentIndex--;
-//     updateTestimonials();
-//   }
-// });
+  this.style.display = "none";
+});
 
-// nextBtn.addEventListener("click", () => {
-//   if (currentIndex < totalCards - visibleCards) {
-//     currentIndex++;
-//     updateTestimonials();
-//   }
-// });
+function sendMail(event) {
+  event.preventDefault(); // Prevent form submission
 
-// updateTestimonials();
+  let full_name = document.getElementById("fullName").value.trim();
+  let email = document.getElementById("Email-id").value.trim();
+  let phone = document.getElementById("Phone-No").value.trim();
+  let city = document.getElementById("City").value.trim();
+  let requirements = document.getElementById("Requirements").value.trim();
 
-function sendMail() {
-  var params = {
-    full_name: document.getElementById("fullName").value,
-    email: document.getElementById("Email-id").value,
-    phone: document.getElementById("Phone-No").value,
-    city: document.getElementById("City").value,
-    requirements: document.getElementById("Requirements").value,
-  };
+  if (
+    [full_name, email, phone, city, requirements].some((field) => field === "")
+  ) {
+    alert("Please enter all the mandatory fields.");
+    return; // Stop function execution
+  }
+
+  var params = { full_name, email, phone, city, requirements };
 
   const serviceID = "service_vold2ul";
   const templateID = "template_imi6jyh";
@@ -56,10 +49,13 @@ function sendMail() {
     .send(serviceID, templateID, params)
     .then((res) => {
       console.log(res);
-      alert("Your message sent successfully!!");
+      alert("Your message was sent successfully!");
     })
     .catch((err) => console.log(err));
 }
+
+// Attach event listener to the form
+document.querySelector(".contact-form").addEventListener("submit", sendMail);
 
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
@@ -139,4 +135,3 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
-

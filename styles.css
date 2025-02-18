@@ -51,7 +51,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 .nav-leftSide {
   display: flex;
@@ -62,6 +62,8 @@ nav {
 .nav-leftSide img {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .nav-midSide ul {
@@ -468,7 +470,8 @@ nav {
   flex-direction: row;
 }
 @media (max-width: 768px) {
-  .who-we-are, .how-we-work {
+  .who-we-are,
+  .how-we-work {
     flex-direction: column;
     text-align: center;
     padding: 30px;
@@ -500,7 +503,6 @@ nav {
     height: 20px;
   }
 }
-
 
 /* features section */
 
@@ -691,16 +693,6 @@ nav {
   color: #7c3aed;
 }
 
-.services-card::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 24px;
-  color: #8b5cf6;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 @media (max-width: 1024px) {
   .servicesCards {
     grid-template-columns: repeat(2, 1fr);
@@ -712,11 +704,29 @@ nav {
   .servicesCards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .services-card {
+    gap: 10px;
+  }
+
+  .services-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .services-card span {
+    font-size: 0.8rem;
+    color: var(--secode-bg-color);
+    line-height: 1;
+  }
 }
 
 @media (max-width: 425px) {
+  .servicesCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .services-title span {
-    font-size: 24px;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #ff6600;
     padding: 10px;
@@ -730,6 +740,43 @@ nav {
   }
 }
 
+.view-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.view-more button {
+  width: 100px;
+  padding: 10px;
+  background-color: var(--btn-bg-color);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hide extra services initially on mobile */
+@media (max-width: 425px) {
+  .hidden-services {
+    display: none;
+  }
+
+  /* Show the "View More" button only on mobile */
+  .view-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 426px) {
+  .view-more {
+    display: none; /* Hide on larger screens */
+  }
+}
+
 /* Contact Us */
 
 .contact-us {
@@ -739,7 +786,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  background: url("./Image/ContactUsBg.jpg") no-repeat center center/cover;
+  background: url("./Image/ContactUsBg.png") no-repeat center center/cover;
   color: #fff; /* Ensure text is visible */
   position: relative;
 }
@@ -1035,12 +1082,17 @@ nav {
 
 /* Testimonials */
 
+.testimonial-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .testimonials {
   display: flex;
   padding: 0 35px;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  margin: 20px 0px;
 }
 .wrapper {
   max-width: 1100px;
