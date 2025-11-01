@@ -42,8 +42,8 @@ function sendMail(event) {
 
   var params = { full_name, email, phone, city, requirements };
 
-  const serviceID = "service_vold2ul";
-  const templateID = "template_imi6jyh";
+  const serviceID = "service_0j5of4f";
+  const templateID = "template_c74b737";
 
   emailjs
     .send(serviceID, templateID, params)
